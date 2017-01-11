@@ -28,6 +28,6 @@ public class JohnTests {
 		String johnSaid = John.saySomething();
 
 		// assert
-		assertEquals(false, sayingsList.contains(johnSaid));
+		assertEquals(true, sayingsList.contains(johnSaid));
 	}
 }
