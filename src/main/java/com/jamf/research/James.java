@@ -7,10 +7,11 @@ public class James {
 
 	public static String saySomething() {
 		int selection = (int) (Math.random() * 1000);
-		String[] sayings =  {"Just say 'No' to plug-ins!",
+		String[] sayings = {"Just say 'No' to plug-ins!",
 				"Serverless code, man! Serverless code.",
 				"Did someone say Lambda",
 				"Dungeons & Dragons!"};
 		return sayings[selection % sayings.length];
 	}
+
 }
