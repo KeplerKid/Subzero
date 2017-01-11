@@ -5,33 +5,32 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.jamf.research.Blake;
 import org.junit.Before;
 import org.junit.Test;
 
 import com.jamf.research.James;
 
 /**
- * Created by jamesfelton on 1/11/17.
+ * Created by Mike Mello on 1/11/17.
  */
 public class JamesTests {
 
 	@Test
 	public void testSaySomething() {
 		// arrange
-		String[] sayings =  {"Pinball time?",
-				"Finally, another Apple event!",
-				"Where's my iPad?",
-				"My wife won't be happy I spent this much."}};
+		String[] sayings =  {"Raspberry Pi's FTW",
+				"Why pay for subscription, roll your own!",
+				"In the words of señor Cynor, \"Game Changer\"",
+				"IDE? you mean easy-mode?"};
 		ArrayList<String> sayingsList = new ArrayList<String>();
 		for (String saying : sayings) {
 			sayingsList.add(saying);
 		}
 
 		// act
-		String jamesSaid = Blake.saySomething();
+		String mikeSaid = Mike.saySomething();
 
 		// assert
-		assertEquals(true, sayingsList.contains(jamesSaid));
+		assertEquals(true, sayingsList.contains(mikeSaid));
 	}
 }
