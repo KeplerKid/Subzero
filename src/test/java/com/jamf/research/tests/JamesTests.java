@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.jamf.research.Blake;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,17 +19,17 @@ public class JamesTests {
 	@Test
 	public void testSaySomething() {
 		// arrange
-		String[] sayings =  {"Just say 'No' to plug-ins!",
-				"Serverless code, man! Serverless code.",
-				"Did someone say Lambda",
-				"Dungeons & Dragons!"};
+		String[] sayings =  {"Pinball time?",
+				"Finally, another Apple event!",
+				"Where's my iPad?",
+				"My wife won't be happy I spent this much."}};
 		ArrayList<String> sayingsList = new ArrayList<String>();
 		for (String saying : sayings) {
 			sayingsList.add(saying);
 		}
 
 		// act
-		String jamesSaid = James.saySomething();
+		String jamesSaid = Blake.saySomething();
 
 		// assert
 		assertEquals(true, sayingsList.contains(jamesSaid));
